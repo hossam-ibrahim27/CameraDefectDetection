@@ -75,7 +75,7 @@ The project aims to:
 #### Candidate Models:
 * **YOLO12** (Selected Primary Model)
 * **YOLOv11**
-* **YOLOv8**
+* **YOLOv26**
 
 #### Primary Model:
 **YOLO12**

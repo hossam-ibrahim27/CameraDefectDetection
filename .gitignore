@@ -1,0 +1,15 @@
+# Python / FastAPI
+venv/
+.venv/
+__pycache__/
+*.pyc
+.env
+
+# React / Frontend
+node_modules/
+dist/
+build/
+.DS_Store
+
+# YOLO outputs
+runs/

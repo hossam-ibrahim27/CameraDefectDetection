@@ -91,10 +91,8 @@ The project aims to:
 
 #### A. AI & Computer Vision Stack
 * **Primary Framework:** Ultralytics YOLO (YOLO12 Architecture)
-* **Deep Learning Runtime:** PyTorch (with CUDA & cuDNN acceleration)
-* **Optimization & Inference Engine:** TensorRT / ONNX Runtime (for ultra-low latency FP16/INT8 inference)
 * **Computer Vision Library:** OpenCV (Image processing & stream decoding)
-* **Dataset & Annotation Platforms:** Roboflow / Label Studio
+* **Dataset & Annotation Platforms:** Roboflow
 
 #### B. Backend Engineering Stack
 * **Core Language:** Python 3.11+

@@ -162,24 +162,9 @@ The system is expected to:
 CAMERADEFECTDETECTION/
 │
 ├── CameraDefectDetection_backend/              # Python FastAPI & YOLO Inference Backend
-│   ├── app/
-│   │   ├── api/
-│   │   │   └── v1/
-│   │   │       ├── endpoints/
-│   │   │       │   ├── predict.py             # REST endpoints for single image/video file inference
-│   │   │       │   └── websocket.py           # Real-time WebSocket connection for live camera stream
-│   │   │       └── router.py                  # Central API route collector
-│   │   ├── core/
-│   │   │   ├── config.py                      # App settings, environment variables & CORS settings
-│   │   │   └── logger.py                      # Centralized logging configuration
-│   │   ├── services/
-│   │   │   ├── detector.py                    # YOLO12 inference wrapper & frame processing pipeline
-│   │   │   └── stream_manager.py             # Camera capture, frame decoder & WebSocket broadcasting
-│   │   └── schemas/
-│   │       └── detection.py                   # Pydantic schemas for request/response validation
 │   ├── models/
 │   │   └── best.pt                            # Trained YOLO12 model weights (.pt / .engine)
-│   ├── uploads/                               # Temporary storage for uploaded test images/videos
+│   ├── test_image/                               # Temporary storage for uploaded test images/videos
 │   ├── main.py                                # FastAPI core entry point (Uvicorn app setup)
 │   ├── requirements.txt                       # Backend Python dependencies (Ultralytics, OpenCV, FastAPI, etc.)
 │   ├── Dockerfile                             # Backend Docker containerization setup
@@ -237,7 +222,7 @@ CAMERADEFECTDETECTION/
 
 | Resource | Description | Link |
 | :--- | :--- | :--- |
-| **🚀 Vercel Web App** | Live Web Dashboard Deployment | [![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://your-app.vercel.app) |
-| **📜 Swagger API Docs** | Interactive FastAPI Documentation | [![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black)](http://127.0.0.1:8000/docs) |
-| **🏷️ Roboflow Dataset** | Annotated Industrial Defects Dataset | [![Roboflow](https://img.shields.io/badge/Roboflow-6706CE?style=for-the-badge&logo=roboflow&logoColor=white)](https://universe.roboflow.com/your-workspace/your-project) |
-| **📓 Google Colab** | YOLO12 Training & Fine-Tuning Notebook | [![Colab](https://img.shields.io/badge/Google_Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/drive/your-notebook-id) |
+| **🚀 Vercel Web App** | Live Web Dashboard Deployment | [![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://camera-defect-detection-frontend.vercel.app/) |
+| **📜 Swagger API Docs** | Interactive FastAPI Documentation | [![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black)](https://cameradefectdetectionbackend-production.up.railway.app/docs) |
+| **🏷️ Roboflow Dataset** | Annotated Industrial Defects Dataset | [![Roboflow](https://img.shields.io/badge/Roboflow-6706CE?style=for-the-badge&logo=roboflow&logoColor=white)](https://universe.roboflow.com/jia-gao-xhafx/wires-rope-defect/dataset/1) |
+| **📓 Google Colab** | YOLO12 Training & Fine-Tuning Notebook | [![Colab](https://img.shields.io/badge/Google_Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/drive/1eZ5YU4tF5gwj8wMmygWOgAXU_LzYbKoL#scrollTo=104ckMKlrUex) |

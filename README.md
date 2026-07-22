@@ -51,7 +51,7 @@ The project aims to:
   Gather high-resolution dataset images of manufactured products under varied lighting, angles, and surface conditions using industrial cameras.
 
 * **Step 2: Defect Annotation & Labeling**  
-  Annotate bounding boxes and assign precise fault classes (e.g., scratches, dents, cracks) using specialized labeling tools (Roboflow / Label Studio).
+  Annotate bounding boxes and assign precise fault classes (e.g., Broken, Extrusion, Twist) using specialized labeling tools (Roboflow).
 
 * **Step 3: Data Preprocessing & Augmentation**  
   Clean, resize, normalize images, and apply data augmentation techniques (rotation, contrast adjustments, noise injection) to expand training variance and prevent overfitting.

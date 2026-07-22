@@ -76,8 +76,6 @@ The project aims to:
 * **YOLO12** (Selected Primary Model)
 * **YOLOv11**
 * **YOLOv8**
-* **Faster R-CNN**
-* **SSD (Single Shot MultiBox Detector)**
 
 #### Primary Model:
 **YOLO12**
@@ -105,23 +103,23 @@ The project aims to:
 * **Data Processing Libraries:** NumPy, Pillow (PIL)
 * **Containerization & Deployment:** Docker & Docker Compose
 
-#### C. Frontend User Interface Stack
+#### C. Desktop Application Stack (Native Shell & UI)
+* **Desktop Runtime Shell:** Electron (v30+)
 * **UI Library & Language:** React.js (v19) with TypeScript
 * **Styling & Design System:** Tailwind CSS
 * **State & Connection Management:** Native WebSockets API / React Hooks
-* **Build Tooling:** Vite / Webpack
+* **Build Tooling & Bundler:** Vite / Electron-Builder / Electron-Forge
 
 #### D. Development & Environment Tools
 * **IDE:** Visual Studio Code (VS Code) / Jupyter Notebook
 * **Version Control:** Git & GitHub
 * **API Testing & Documentation:** Swagger UI (Interactive OpenAPI) & Postman
-
 ---
 
 ### 7. Hardware Requirements (High-Performance / Production Specs)
 
 #### A. Edge / Local Server (Recommended for High-Speed Real-Time Inference)
-* **CPU:** Intel Core i7 / i9 (13th Gen or higher) OR AMD Ryzen 7 / 9 (7000 Series or higher)
+* **CPU:** Intel Core i9 (13th Gen or higher) OR AMD Ryzen 9 (7000 Series or higher)
 * **GPU (Crucial for YOLO12 TensorRT Speedup):** NVIDIA RTX 4070 / RTX 4080 (12GB+ VRAM) or NVIDIA RTX A4000 (Dedicated Workstation GPU)
 * **RAM:** 32 GB DDR5 (5600 MHz)
 * **Storage:** 1 TB NVMe M.2 SSD (Read/Write speeds ≥ 5000 MB/s for fast model/weight loading)
